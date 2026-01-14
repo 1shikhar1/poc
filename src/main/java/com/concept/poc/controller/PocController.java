@@ -17,6 +17,7 @@ public class PocController {
 
     @GetMapping("/health")
     public String getHealth() {
+        System.out.println("STDOUT: reached /poc/health");
         log.info("Received health check request");
         return "Service is up and running!";
     }
